@@ -18,7 +18,8 @@ export const products = [
     {
       id: 3,
       title: "TUNTURI FITNESSMAT PRO MAT 140 - GREEN",
-      description: "The solid and thick material ensures a comfortable lying down posture during your floor exercises. green in color",
+      //The solid and thick material ensures a comfortable lying down posture during your floor exercises. green in color
+      description: "The solid and thick material ensures a comfortable... \n green in color",
       price: "3500",
       img: "./images/mat1.jpg",
       quantity: 1,
@@ -26,49 +27,11 @@ export const products = [
     {
       id: 4,
       title: "TUNTURI FITNESSMAT PRO MAT - BLACK",
-      description: "The solid and thick material ensures a comfortable lying down posture during your floor exercises. black in color",
+      //The solid and thick material ensures a comfortable lying down posture during your floor exercises. black in color
+      description: "The solid and thick material ensures a comfortable...\n black in color",
       price: "5800",
       img: "./images/mat2.jpg",
       quantity: 1,
     },
-    {
-      id: 5,
-      title: "10kg DUMBBELL SET",
-      description: "Black in color",
-      price: "5500",
-      img: "./images/dumbbell2.jpg",
-      quantity: 1,
-    },
-    {
-      id: 6,
-      title: "10kg DUMBBELL SET",
-      description: "Black in color",
-      price: "5500",
-      img: "./images/dumbbell2.jpg",
-      quantity: 1,
-    },
-    {
-      id: 7,
-      title: "10kg DUMBBELL SET",
-      description: "Black in color",
-      price: "5500",
-      img: "./images/dumbbell2.jpg",
-      quantity: 1,
-    },
-    {
-      id: 8,
-        title: "10kg DUMBBELL SET",
-        description: "Black in color",
-        price: "5500",
-        img: "./images/dumbbell2.jpg",
-        quantity: 1,
-    },
-    {
-      id: 9,
-      title: "10kg DUMBBELL SET",
-      description: "Black in color",
-      price: "5500",
-      img: "./images/dumbbell2.jpg",
-      quantity: 1,
-    },
+    
   ];
