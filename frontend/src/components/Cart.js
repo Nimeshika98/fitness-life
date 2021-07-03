@@ -4,6 +4,7 @@ import { Scrollbars } from 'react-custom-scrollbars-2';
 import Items from './Items';
 import { products } from "./products";
 
+export const CartContext = createContext();
 
 const  Cart = () => {
 
@@ -19,7 +20,7 @@ const  Cart = () => {
 
       <div className="cart-icon">
         <img src="./images/cart.png" alt="cart" />
-        <p>7</p>
+        <p>5</p>
       </div>
     </header>
 
@@ -40,7 +41,7 @@ const  Cart = () => {
       </div>
 
         <div className="card-total">
-            <h3>Cart Total : <span>22300 Rs</span></h3>
+            <h3>Cart Total : <span>Rs 22300 </span></h3>
             <button>Checkout</button>
         </div>
       

@@ -38,7 +38,7 @@ body {
   width: 80%;
   height: 100vh;
   margin: auto;
-  background-color: #040326;
+  background-color: #0B1D2F;
 }
 
 header {
@@ -313,7 +313,7 @@ header {
 }
 
 .card-total button:hover {
-  background-color: #0077dc;
+  background-color: #909CC2;
 }
 
 .card-total .clear-cart {
