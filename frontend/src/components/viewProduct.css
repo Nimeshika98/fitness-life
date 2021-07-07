@@ -173,14 +173,14 @@ body {
 
 .card-body .row{
   margin: 1px 1px 6px 1px;
-  padding: 10px 150px 10px 0px;
+  padding: 10px 10px 10px 0px;
   box-sizing: border-box;
   /* border: none; */
   width: fit-content;
 }
 
 .card-body .quantity h2{
-  margin: 0 6px 0 0;
+  margin: 5px;
 }
 
 .card-body .row .quantity input{
@@ -200,15 +200,65 @@ body {
   outline: none;
   background-color: transparent;
 }
+.dropdown .multiSelectContainer {
+  margin: 5px;
+}
+.row .dropdown .searchWrapper {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 2px;
+  min-height: 22px;
+  position: relative;
+}
 
+.chip, .singleChip {
+  white-space: nowrap;
+}
+
+.row .chip {
+  padding: 4px 10px;
+  background: #084887;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 11px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.multiSelectContainer input {
+  border: none;
+  margin-top: 5px;
+  font-size: 1.6rem;
+  background: transparent;
+}
+.optionContainer{
+
+}
+.optionContainer .highlightOption {
+  background: #909CC2;
+}
+
+.multiSelectContainer li {
+    padding: 5px;
+    border-radius: 2.5rem;
+    font-size: 1.6rem;
+    text-align:center;
+}
+.multiSelectContainer li:hover {
+  background: #909CC2;
+}
 
 .btn-primary {
   color: #fff;
   background-color: #F58A07;
   border-color: none;
-  padding: 0px 1px 0px 1px;
+  padding: 0px 1px 0px 2px;
   border-radius: 1rem;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 5px;
 }
 .btn-primary .row {
@@ -219,6 +269,10 @@ body {
 
 button .fa, .fas{
   margin-right: 10px;
+}
+button i.fas.fa-heart{
+  margin: 5px;
+  align-items: center;
 }
 
 .related-row .related-card1,.related-card2, .related-card3, .related-card4{

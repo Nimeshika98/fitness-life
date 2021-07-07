@@ -1,10 +1,13 @@
 import React from "react";
 import './viewProduct.css';
 //import { Scrollbars } from 'react-custom-scrollbars-2';
-//import Items from './Items';
+import Items from './Cart';
 //import { products } from "./products";
+import Multiselect from 'multiselect-react-dropdown';
+//import { useHistory } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card, Carousel, Row, Navbar, Nav, } from "react-bootstrap";
+
 
 
 
@@ -12,6 +15,11 @@ import { Button, Card, Carousel, Row, Navbar, Nav, } from "react-bootstrap";
 function viewProduct() {
 
    // const [item, setItem] = useState(products);
+  // let history = useHistory();
+
+  // const redirect = () => {
+  //  history.push('./Cart')
+  //}
 
   return(
 
@@ -55,6 +63,21 @@ function viewProduct() {
                                 <div className="quantity">
                                     <h2>Quantity: <input type="text" placeholder="1"/></h2>
                                 </div>
+                                <div>
+                                    <Multiselect
+                                        isObject={false}
+                                        onRemove={function noRefCheck(){}}
+                                        onSelect={function noRefCheck(){}}
+                                        options={[
+                                            'XS',
+                                            'S',
+                                            'M',
+                                            'L',
+                                            'XL'
+                                        ]}
+                                        placeholder="Size"
+                                    />
+                                </div>
                             </Row>
                             <Row>
                             <div className="price">
@@ -64,16 +87,22 @@ function viewProduct() {
                             
                             <br/>
                             <Row>
-                                <Button>
+                                <Button >
                                     <Row>
+                                    
                                     <i class="fa fa-shopping-cart"></i>
                                     ADD TO CART
                                     </Row>
                                 </Button>
                                 <Button>
                                     <Row>
+                                    <i class="fas fa-credit-card"></i>
+                                    Buy Now
+                                    </Row>        
+                                </Button>
+                                <Button>
+                                    <Row>
                                     <i class="fas fa-heart"></i>
-                                    WishList
                                     </Row>
                                 </Button>
                             </Row>
