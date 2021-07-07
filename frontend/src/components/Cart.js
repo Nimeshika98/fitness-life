@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import './cart.css';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import Items from './Items';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button,  Navbar, Nav, } from "react-bootstrap";
 
 import { products } from "./products";
 
@@ -13,17 +15,18 @@ const  Cart = () => {
   return(
 
         <>
-            <header>
-                <div className="continue-shopping">
-                    <img src="./images/icons/arrow2.png" alt="arrow" className="arrow-icon"/>
-                    <h3>Continue Shopping</h3>
-                </div>
-
-                <div className="cart-icon">
-                    <img src="./images/icons/cart.png" alt="cart" />
-                    <p>5</p>
-                </div>
-            </header>
+            <Navbar>
+                <Navbar.Brand href="./mainContent" className="continue-shopping">
+                        <img src="./images/icons/arrow2.png" alt="arrow" className="arrow-icon"/>
+                        <h3>Continue Shopping</h3>
+                </Navbar.Brand>
+                <Nav className="cart-icon">
+                    <Nav.Link href="#">
+                        <img src="./images/icons/cart.png" alt="cart"/>
+                        <p>5</p>
+                    </Nav.Link>
+                </Nav>
+            </Navbar>
 
             <section className="main-cart-section">
                 <h1>shopping Cart</h1>
