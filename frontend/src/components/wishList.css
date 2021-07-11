@@ -132,8 +132,8 @@ body {
   background-color: #F7F5FB;
   box-shadow: rgba(0, 0, 0, 0.08) 0rem 0.4rem 1.2rem;
   border-radius: 2rem;
-  margin: auto;
-  margin: auto;
+  margin: 5rem 2rem 6rem 1rem;
+  
   display: grid;
   place-items: center;
 }

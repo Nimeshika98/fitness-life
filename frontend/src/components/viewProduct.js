@@ -87,7 +87,7 @@ function ViewProduct() {
                             
                             <br/>
                             <Row>
-                                <Button >
+                                <Button onClick={() => { history.push("/cart");}}>
                                     <Row>
                                     
                                     <i class="fas fa-shopping-cart"></i>
@@ -100,7 +100,7 @@ function ViewProduct() {
                                     Buy Now
                                     </Row>        
                                 </Button>
-                                <Button>
+                                <Button onClick={() => { history.push("/wishlist");}} className="wishlist">
                                     <Row>
                                     <i class="fas fa-heart"></i>
                                     </Row>

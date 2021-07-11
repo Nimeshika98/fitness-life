@@ -235,9 +235,7 @@ body {
   font-size: 1.6rem;
   background: transparent;
 }
-.optionContainer{
 
-}
 .optionContainer .highlightOption {
   background: #909CC2;
 }
@@ -261,13 +259,17 @@ body {
   margin-left: 10px;
   margin-top: 5px;
 }
+
 .btn-primary .row {
   padding: 5px;
   font-size: 1.62rem;
   margin: 6px 2px 6px;
 }
+button .fas{
+  margin-right: 10px;
+}
 
-button .fa-shopping-cart, .fas{
+button .fa-shopping-cart{
   margin-right: 10px;
   color: white;
 }
@@ -328,3 +330,4 @@ h1{
 .card-body button:hover {
   background-color: #909CC2;
 }
+
