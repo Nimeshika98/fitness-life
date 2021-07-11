@@ -267,8 +267,9 @@ body {
   margin: 6px 2px 6px;
 }
 
-button .fa, .fas{
+button .fa-shopping-cart, .fas{
   margin-right: 10px;
+  color: white;
 }
 button i.fas.fa-heart{
   margin: 5px;

@@ -4,26 +4,21 @@ import React from 'react';
 //import Header from "./components/header";
 //import Footer from "./components/footer";
 import Cart from "./components/Cart";
-import WishList from './components/WishList'
+import WishList from './components/WishList';
+import ViewProduct from "./components/ViewProduct";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ViewProduct from "./components/viewProduct";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+  BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div> 
       
-      <WishList/>
       <Router>
-      <Switch>
-          <Route path="./components/Cart">
-            <Cart />
-          </Route>
+        <Switch>
+          <Route exact path="/viewproduct" component={ViewProduct}/>
+          <Route exact path="/cart" component={Cart}/>
+          <Route exact path="/wishlist" component={WishList}/>
         </Switch>
 
       </Router>

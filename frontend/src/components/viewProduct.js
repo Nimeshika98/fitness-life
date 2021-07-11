@@ -4,7 +4,7 @@ import './viewProduct.css';
 import Items from './Cart';
 //import { products } from "./products";
 import Multiselect from 'multiselect-react-dropdown';
-//import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card, Carousel, Row, Navbar, Nav, } from "react-bootstrap";
 
@@ -12,13 +12,13 @@ import { Button, Card, Carousel, Row, Navbar, Nav, } from "react-bootstrap";
 
 
 
-function viewProduct() {
+function ViewProduct() {
 
    // const [item, setItem] = useState(products);
-  // let history = useHistory();
+   let history = useHistory();
 
   // const redirect = () => {
-  //  history.push('./Cart')
+
   //}
 
   return(
@@ -90,7 +90,7 @@ function viewProduct() {
                                 <Button >
                                     <Row>
                                     
-                                    <i class="fa fa-shopping-cart"></i>
+                                    <i class="fas fa-shopping-cart"></i>
                                     ADD TO CART
                                     </Row>
                                 </Button>
@@ -149,4 +149,4 @@ function viewProduct() {
   )
 };
 
-export default viewProduct
+export default ViewProduct
